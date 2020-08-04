@@ -27,5 +27,6 @@ func init() {
 	if err := v.Unmarshal(&global.GVA_CONFIG); err != nil {
 		fmt.Println(err)
 	}
+
 	global.GVA_VP = v
 }
