@@ -415,6 +415,13 @@ definitions:
       id:
         type: number
     type: object
+  request.IdsReq:
+    properties:
+      ids:
+        items:
+          type: integer
+        type: array
+    type: object
   request.PageInfo:
     properties:
       page:
@@ -551,7 +558,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysApi'
-          type: object
       produces:
       - application/json
       responses:
@@ -575,7 +581,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysApi'
-          type: object
       produces:
       - application/json
       responses:
@@ -615,7 +620,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.GetById'
-          type: object
       produces:
       - application/json
       responses:
@@ -639,7 +643,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.SearchApiParams'
-          type: object
       produces:
       - application/json
       responses:
@@ -663,7 +666,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysApi'
-          type: object
       produces:
       - application/json
       responses:
@@ -687,7 +689,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/response.SysAuthorityCopyResponse'
-          type: object
       produces:
       - application/json
       responses:
@@ -711,7 +712,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysAuthority'
-          type: object
       produces:
       - application/json
       responses:
@@ -735,7 +735,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysAuthority'
-          type: object
       produces:
       - application/json
       responses:
@@ -759,7 +758,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.PageInfo'
-          type: object
       produces:
       - application/json
       responses:
@@ -783,7 +781,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysAuthority'
-          type: object
       produces:
       - application/json
       responses:
@@ -807,7 +804,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysAuthority'
-          type: object
       produces:
       - application/json
       responses:
@@ -831,7 +827,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.AutoCodeStruct'
-          type: object
       produces:
       - application/json
       responses:
@@ -885,7 +880,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.RegisterAndLoginStruct'
-          type: object
       produces:
       - application/json
       responses:
@@ -905,7 +899,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysUser'
-          type: object
       produces:
       - application/json
       responses:
@@ -927,7 +920,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.CasbinInReceive'
-          type: object
       produces:
       - application/json
       responses:
@@ -951,7 +943,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.CasbinInReceive'
-          type: object
       produces:
       - application/json
       responses:
@@ -975,7 +966,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.CasbinInReceive'
-          type: object
       produces:
       - application/json
       responses:
@@ -999,7 +989,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.ExaCustomer'
-          type: object
       produces:
       - application/json
       responses:
@@ -1022,7 +1011,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.ExaCustomer'
-          type: object
       produces:
       - application/json
       responses:
@@ -1045,7 +1033,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.ExaCustomer'
-          type: object
       produces:
       - application/json
       responses:
@@ -1068,7 +1055,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.ExaCustomer'
-          type: object
       produces:
       - application/json
       responses:
@@ -1092,7 +1078,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.PageInfo'
-          type: object
       produces:
       - application/json
       responses:
@@ -1136,7 +1121,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.ExaFileUploadAndDownload'
-          type: object
       produces:
       - application/json
       responses:
@@ -1182,7 +1166,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.PageInfo'
-          type: object
       produces:
       - application/json
       responses:
@@ -1266,7 +1249,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.AuthorityIdInfo'
-          type: object
       produces:
       - application/json
       responses:
@@ -1290,7 +1272,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysBaseMenu'
-          type: object
       produces:
       - application/json
       responses:
@@ -1314,7 +1295,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.AddMenuAuthorityInfo'
-          type: object
       produces:
       - application/json
       responses:
@@ -1338,7 +1318,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.GetById'
-          type: object
       produces:
       - application/json
       responses:
@@ -1362,7 +1341,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.GetById'
-          type: object
       produces:
       - application/json
       responses:
@@ -1384,7 +1362,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.RegisterAndLoginStruct'
-          type: object
       produces:
       - application/json
       responses:
@@ -1406,7 +1383,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.RegisterAndLoginStruct'
-          type: object
       produces:
       - application/json
       responses:
@@ -1430,7 +1406,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.PageInfo'
-          type: object
       produces:
       - application/json
       responses:
@@ -1454,7 +1429,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysBaseMenu'
-          type: object
       produces:
       - application/json
       responses:
@@ -1478,7 +1452,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysDictionary'
-          type: object
       produces:
       - application/json
       responses:
@@ -1502,7 +1475,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysDictionary'
-          type: object
       produces:
       - application/json
       responses:
@@ -1526,7 +1498,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysDictionary'
-          type: object
       produces:
       - application/json
       responses:
@@ -1550,7 +1521,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.SysDictionarySearch'
-          type: object
       produces:
       - application/json
       responses:
@@ -1574,7 +1544,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysDictionary'
-          type: object
       produces:
       - application/json
       responses:
@@ -1598,7 +1567,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysDictionaryDetail'
-          type: object
       produces:
       - application/json
       responses:
@@ -1622,7 +1590,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysDictionaryDetail'
-          type: object
       produces:
       - application/json
       responses:
@@ -1646,7 +1613,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysDictionaryDetail'
-          type: object
       produces:
       - application/json
       responses:
@@ -1670,7 +1636,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.SysDictionaryDetailSearch'
-          type: object
       produces:
       - application/json
       responses:
@@ -1694,7 +1659,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysDictionaryDetail'
-          type: object
       produces:
       - application/json
       responses:
@@ -1718,7 +1682,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysOperationRecord'
-          type: object
       produces:
       - application/json
       responses:
@@ -1742,7 +1705,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysOperationRecord'
-          type: object
       produces:
       - application/json
       responses:
@@ -1753,6 +1715,29 @@ paths:
       security:
       - ApiKeyAuth: []
       summary: 删除SysOperationRecord
+      tags:
+      - SysOperationRecord
+  /sysOperationRecord/deleteSysOperationRecordByIds:
+    delete:
+      consumes:
+      - application/json
+      parameters:
+      - description: 批量删除SysOperationRecord
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/request.IdsReq'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"success":true,"data":{},"msg":"删除成功"}'
+          schema:
+            type: string
+      security:
+      - ApiKeyAuth: []
+      summary: 批量删除SysOperationRecord
       tags:
       - SysOperationRecord
   /sysOperationRecord/findSysOperationRecord:
@@ -1766,7 +1751,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysOperationRecord'
-          type: object
       produces:
       - application/json
       responses:
@@ -1790,7 +1774,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.SysOperationRecordSearch'
-          type: object
       produces:
       - application/json
       responses:
@@ -1814,7 +1797,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysOperationRecord'
-          type: object
       produces:
       - application/json
       responses:
@@ -1836,7 +1818,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.System'
-          type: object
       produces:
       - application/json
       responses:
@@ -1872,7 +1853,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.System'
-          type: object
       produces:
       - application/json
       responses:
@@ -1894,7 +1874,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.ChangePasswordStruct'
-          type: object
       produces:
       - application/json
       responses:
@@ -1918,7 +1897,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.GetById'
-          type: object
       produces:
       - application/json
       responses:
@@ -1942,7 +1920,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.PageInfo'
-          type: object
       produces:
       - application/json
       responses:
@@ -1966,7 +1943,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/request.SetUserAuth'
-          type: object
       produces:
       - application/json
       responses:
@@ -2015,7 +1991,6 @@ paths:
         required: true
         schema:
           $ref: '#/definitions/model.SysWorkflow'
-          type: object
       produces:
       - application/json
       responses:

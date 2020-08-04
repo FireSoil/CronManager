@@ -1,3 +1,6 @@
 .idea
 web/node_modules
 server/vendor
+server/latest_log
+server/log/*
+.DS_Store
