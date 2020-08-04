@@ -2,5 +2,5 @@
 web/node_modules
 server/vendor
 server/latest_log
-server/log/*
+server/log
 .DS_Store
