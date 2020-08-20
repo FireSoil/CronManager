@@ -5,13 +5,19 @@ import (
 	"gin-vue-admin/global"
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/viper"
+	"os"
 )
 
-const defaultConfigFile = "config.yaml"
+var configFile = "config_local.yaml"
 
 func init() {
+	env := os.Getenv("GIN_ENV")
+	fmt.Println("env:"+env)
+	if  env != "" {
+		configFile = "config_" + env + ".yaml"
+	}
 	v := viper.New()
-	v.SetConfigFile(defaultConfigFile)
+	v.SetConfigFile(configFile)
 	err := v.ReadInConfig()
 	if err != nil {
 		panic(fmt.Errorf("Fatal error config file: %s \n", err))

@@ -31,7 +31,7 @@ COPY --from=builder /web/dist/ /var/www/
 #copy go app
 COPY --from=builder /go/src/gin-vue-admin/gvadmin ./
 COPY --from=builder /go/src/gin-vue-admin/db.db ./
-COPY --from=builder /go/src/gin-vue-admin/config.yaml ./
+COPY --from=builder /go/src/gin-vue-admin/config*.yaml ./
 COPY --from=builder /go/src/gin-vue-admin/resource ./resource
 COPY docker/docker-start.sh ./
 

@@ -2,5 +2,5 @@
 web cron manager admin
 
 
-### 感谢以下项目
+### 参考
 > [gin-vue-admin](https://github.com/flipped-aurora/gin-vue-admin)
